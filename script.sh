@@ -22,22 +22,18 @@ sudo mv pgsql.gpg /etc/apt/trusted.gpg.d/pgsql.gpg
 
 fi
 
-if [ $1 -eq "kaldır" ]; then
+else if [ $1 -eq "kaldır" ]; then
     apt --remove liman-2.0-RC2-863.deb
 fi
 
-if [ $1 -eq "administrator"]; then
+else if [ $1 -eq "administrator"]; then
     sudo limanctl administrator
 fi
 
-if [ $1 -eq "help" ]; then 
+else if [ $1 -eq "help" ]; then 
     HAVELSAN Liman Merkezi Yönetim Sistemi(MYS) 2.0 sürümü ile görsel ve özellik olarak zenginleşen ürünü kurmak için aşağıdaki adımları takip edebilirsiniz.
 
 Liman MYS 2.0 sürümünü kurmak için öncelikle NodeJS güncel repolarını sistemimize eklememiz gerekiyor. Node 18 versiyon ve sonrası kullanılması önerilmektedir.
-    ./liman.sh kur -> Limanı Kurar
-    ./liman.sh kaldır -> Limanı Kaldırır
-    ./liman.sh adminastor -> sudo limanctl reset adminastrator@liman.dev
-    ./liman.sh help -> Nasıl Kullanılacağını yazsın
 
 fi
 
