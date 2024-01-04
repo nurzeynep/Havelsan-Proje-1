@@ -16,14 +16,15 @@ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)
 wget -O- https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor > pgsql.gpg
 sudo mv pgsql.gpg /etc/apt/trusted.gpg.d/pgsql.gpg
 
-sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
-wget -O- https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor > pgsql.gpg
-sudo mv pgsql.gpg /etc/apt/trusted.gpg.d/pgsql.gpg
+sudo apt update
+wget https://github.com/limanmys/core/releases/download/release.feature-new-ui.863/liman-2.0-RC2-863.deb
+apt install ./liman-2.0-RC2-863.deb
 
 fi
 
 else if [ $1 -eq "kaldır" ]; then
     apt --remove liman-2.0-RC2-863.deb
+    rm -rf /liman
 fi
 
 else if [ $1 -eq "administrator"]; then
@@ -34,6 +35,9 @@ else if [ $1 -eq "help" ]; then
     HAVELSAN Liman Merkezi Yönetim Sistemi(MYS) 2.0 sürümü ile görsel ve özellik olarak zenginleşen ürünü kurmak için aşağıdaki adımları takip edebilirsiniz.
 
 Liman MYS 2.0 sürümünü kurmak için öncelikle NodeJS güncel repolarını sistemimize eklememiz gerekiyor. Node 18 versiyon ve sonrası kullanılması önerilmektedir.
+    echo "usage ./liman.sh <kur|kaldır|administrator|help>"
+    echo "kur HAVELSAN Liman MYS ürününün kuulumunu gerçekleştirir"
+    ....
 
 fi
 
