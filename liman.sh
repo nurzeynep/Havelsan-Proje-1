@@ -32,9 +32,9 @@ else if [ $1 -eq "administrator"]; then
 fi
 
 else if [ $1 -eq "help" ]; then 
-    HAVELSAN Liman Merkezi Yönetim Sistemi(MYS) 2.0 sürümü ile görsel ve özellik olarak zenginleşen ürünü kurmak için aşağıdaki adımları takip edebilirsiniz.
+   echo "HAVELSAN Liman Merkezi Yönetim Sistemi(MYS) 2.0 sürümü ile görsel ve özellik olarak zenginleşen ürünü kurmak için aşağıdaki adımları takip edebilirsiniz.
 
-Liman MYS 2.0 sürümünü kurmak için öncelikle NodeJS güncel repolarını sistemimize eklememiz gerekiyor. Node 18 versiyon ve sonrası kullanılması önerilmektedir.
+Liman MYS 2.0 sürümünü kurmak için öncelikle NodeJS güncel repolarını sistemimize eklememiz gerekiyor. Node 18 versiyon ve sonrası kullanılması önerilmektedir."
     echo "usage ./liman.sh <kur|kaldır|administrator|help>"
     echo "kur HAVELSAN Liman MYS ürününün kuulumunu gerçekleştirir"
     ....
