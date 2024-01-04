@@ -5,7 +5,7 @@ Açık Kaynak Yazılım Geliştirme PROJE-1
 
 ## Kullanımı
 ```
-./script.sh 777 zeynep sudo script.sh Zeynep Nur Karaca 2020282028
+./liman.sh 777 zeynep sudo liman.sh Zeynep Nur Karaca 2020282028
 ```
     ./liman.sh kur -> Limanı Kurar
     ./liman.sh kaldır -> Limanı Kaldırır
