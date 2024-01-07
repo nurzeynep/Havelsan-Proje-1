@@ -47,7 +47,7 @@ else if ;
     echo basarısız
 
 wget
-echo "$(date) log" >> /var/log/liman-kur.log
+echo "$(date) $(date +%T) log" >> /var/log/liman-kur.log
 
 fi
 
